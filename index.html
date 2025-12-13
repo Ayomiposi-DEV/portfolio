@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+		<link rel="stylesheet" href="index.css" />
+		<script defer src="index.js"></script>
+		<title>My portfolio</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="logo">Ayomiposi</div>
+				<button class="menu" id="btn"><i class="fa-solid fa-bars"></i></button>
+				<ul class="list-items">
+					<li><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#skill">Skill</a></li>
+					<li><a href="#project">Project</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Hero Section -->
+		<div class="container" id="home">
+			<section class="hero">
+				<h1>Hi, I'm Ayomiposi Lowo</h1>
+				<p>Web Developer | Designer | Creative Thinker</p>
+				<a href="#contact" class="cta-button">Get In Touch</a>
+			</section>
+		</div>
+		<!-- about section -->
+		<div class="container" id="about">
+			<section>
+				<h2 class="about-head">About Me</h2>
+				<div class="about-content">
+					<div class="about-image"><img src="./ME.jpg" alt="ME.jpg" /></div>
+					<div class="about-text">
+						<p class="paragragh">
+							I’m a coding master in training, always excited to learn new skills and build creative
+							projects on my computer. Technology feels like a playground to me, and every day I discover
+							something new that makes me want to keep improving.
+						</p>
+
+						<p class="paragragh">
+							When I’m not coding, you’ll probably find me playing video games or imagining epic adventures
+							with my action figures. I’m eleven years old, proud to have all A’s in school, and my favorite
+							subject right now is reading because it lets me explore new worlds and ideas.
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- My Skills -->
+		<div class="container" id="skill">
+			<section>
+				<h2 class="about-head">My Skills</h2>
+				<div class="skill-container">
+					<div class="skill-card">
+						<h3>Frontend Development</h3>
+						<p>HTML5, CSS3, JavaScript</p>
+					</div>
+					<div class="skill-card">
+						<h3>Responsive Design</h3>
+						<p>Mobile-first design, CSS Grid, Flexbox</p>
+					</div>
+					<div class="skill-card">
+						<h3>Git - Version Control</h3>
+						<p>Git, GitHub, Collaborative Development</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- Contact -->
+		<div class="container" id="contact">
+			<section>
+				<form class="form-style">
+					<div class="form-style2">
+						<h2>Contact</h2>
+						<label for="name">Name:</label><br />
+						<input type="text" id="name" name="name" required /><br /><br />
+
+						<label for="email">Email:</label><br />
+						<input type="email" id="email" name="email" required /><br /><br />
+
+						<label for="message">Message:</label><br />
+						<textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+						<button type="submit" class="btn-submit">Submit</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</body>
+</html>
