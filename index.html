@@ -10,9 +10,8 @@
 	</head>
 	<body>
 		<header>
-			<nav>
+			<nav class="container">
 				<div class="logo">Ayomiposi</div>
-				<button class="menu" id="btn"><i class="fa-solid fa-bars"></i></button>
 				<ul class="list-items">
 					<li><a href="#">Home</a></li>
 					<li><a href="#about">About</a></li>
@@ -20,30 +19,31 @@
 					<li><a href="#project">Project</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
+				<button class="menu" id="btn"><i class="fa-solid fa-bars"></i></button>
 			</nav>
 		</header>
-		<!-- Hero Section -->
-		<div class="container" id="home">
-			<section class="hero">
-				<h1>Hi, I'm Ayomiposi Lowo</h1>
-				<p>Web Developer | Designer | Creative Thinker</p>
-				<a href="#contact" class="cta-button">Get In Touch</a>
+		<main>
+			<!-- Hero Section -->
+			<section class="hero" id="home">
+				<div class="container">
+					<h1>Hi, I'm Ayomiposi Lowo</h1>
+					<p>Web Developer | Designer | Creative Thinker</p>
+					<a href="#contact" class="cta-button">Get In Touch</a>
+				</div>
 			</section>
-		</div>
-		<!-- about section -->
-		<div class="container" id="about">
-			<section>
-				<h2 class="about-head">About Me</h2>
+			<!-- about section -->
+			<section id="about" class="container">
+				<h2 class="section-head">About Me</h2>
 				<div class="about-content">
 					<div class="about-image"><img src="./ME.jpg" alt="ME.jpg" /></div>
 					<div class="about-text">
-						<p class="paragragh">
+						<p>
 							I’m a coding master in training, always excited to learn new skills and build creative
 							projects on my computer. Technology feels like a playground to me, and every day I discover
 							something new that makes me want to keep improving.
 						</p>
 
-						<p class="paragragh">
+						<p>
 							When I’m not coding, you’ll probably find me playing video games or imagining epic adventures
 							with my action figures. I’m eleven years old, proud to have all A’s in school, and my favorite
 							subject right now is reading because it lets me explore new worlds and ideas.
@@ -51,11 +51,9 @@
 					</div>
 				</div>
 			</section>
-		</div>
-		<!-- My Skills -->
-		<div class="container" id="skill">
-			<section>
-				<h2 class="about-head">My Skills</h2>
+			<!-- My Skills -->
+			<section id="skill" class="container">
+				<h2 class="section-head">My Skills</h2>
 				<div class="skill-container">
 					<div class="skill-card">
 						<h3>Frontend Development</h3>
@@ -71,13 +69,11 @@
 					</div>
 				</div>
 			</section>
-		</div>
-		<!-- Contact -->
-		<div class="container" id="contact">
-			<section>
+			<!-- Contact -->
+			<section id="contact" class="container">
 				<form class="form-style">
 					<div class="form-style2">
-						<h2>Contact</h2>
+						<h2 class="section-head">Contact</h2>
 						<label for="name">Name:</label><br />
 						<input type="text" id="name" name="name" required /><br /><br />
 
@@ -91,6 +87,6 @@
 					</div>
 				</form>
 			</section>
-		</div>
+		</main>
 	</body>
 </html>
