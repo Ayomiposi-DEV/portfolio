@@ -1,16 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 		<link rel="stylesheet" href="index.css" />
 		<script defer src="index.js"></script>
 		<title>My portfolio</title>
 	</head>
 	<body>
 		<header>
-			<nav class="container">
+			<!-- <nav class="container">
 				<div class="logo">Ayomiposi</div>
 				<ul class="list-items">
 					<li><a href="#">Home</a></li>
@@ -20,15 +22,43 @@
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 				<button class="menu" id="btn"><i class="fa-solid fa-bars"></i></button>
+			</nav> -->
+			<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+				<div class="container">
+					<a class="navbar-brand fw-bold" href="#"> <i class="fas fa-rocket text-primary"></i> AYOMIPOSI </a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="#skill">Skill</a></li>
+							<li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+							<li class="nav-item btn-success btn btn-sm">
+								<a class="nav-link" href="#contact">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</nav>
 		</header>
 		<main>
 			<!-- Hero Section -->
-			<section class="hero" id="home">
-				<div class="container">
-					<h1>Hi, I'm Ayomiposi Lowo</h1>
-					<p>Web Developer | Designer | Creative Thinker</p>
-					<a href="#contact" class="cta-button">Get In Touch</a>
+			<section class="hero-section" id="home">
+				<div class="container hero-content">
+					<div class="row align-items-center">
+						<div class="col-lg-6 mb-4 mb-lg-0">
+							<h1 class="display-3 fw-bold mb-4">Hi, I'm Ayomiposi Lowo</h1>
+							<p class="lead mb-4">Web Developer | Designer | Creative Thinker</p>
+							<div class="d-flex gap-3 flex-wrap">
+								<a href="#" class="btn btn-dark btn-lg">Get In Touch</a>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<img src="./code-img.jpg" class="img-fluid rounded" />
+						</div>
+					</div>
 				</div>
 			</section>
 			<!-- about section -->
@@ -88,5 +118,6 @@
 				</form>
 			</section>
 		</main>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>
