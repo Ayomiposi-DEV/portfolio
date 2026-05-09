@@ -3,28 +3,42 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
 		<link rel="stylesheet" href="index.css" />
-		<script defer src="index.js"></script>
-		<title>My portfolio</title>
+
+		<title>Ayomiposi Portfolio</title>
 	</head>
+
 	<body>
+		<!-- Navbar -->
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+			<nav class="navbar navbar-expand-lg custom-nav fixed-top">
 				<div class="container">
-					<a class="navbar-brand fw-bold" href="#"> <i class="fas fa-rocket text-primary"></i> Ayomiposi </a>
+					<a class="navbar-brand logo" href="#"> <i class="fas fa-code"></i> Ayomiposi </a>
+
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 						<span class="navbar-toggler-icon"></span>
 					</button>
+
 					<div class="collapse navbar-collapse" id="navbarNav">
 						<ul class="navbar-nav ms-auto">
-							<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-							<li class="nav-item"><a class="nav-link" href="#skill">Skill</a></li>
-							<li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
-							<li class="nav-item btn-success btn btn-sm">
+							<li class="nav-item">
+								<a class="nav-link" href="#home">Home</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#about">About</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="#skill">Skills</a>
+							</li>
+
+							<li class="nav-item">
 								<a class="nav-link" href="#contact">Contact</a>
 							</li>
 						</ul>
@@ -32,149 +46,193 @@
 				</div>
 			</nav>
 		</header>
+
 		<main>
-			<!-- Hero Section -->
+			<!-- Hero -->
 			<section class="hero-section" id="home">
-				<div class="container hero-content">
-					<div class="row align-items-center">
-						<div class="col-lg-6 mb-4 mb-lg-0">
-							<h1 class="display-3 fw-bold mb-4">Hi, I'm Ayomiposi Lowo</h1>
-							<p class="lead mb-4">Web Developer | Designer | Creative Thinker</p>
-							<div class="d-flex gap-3 flex-wrap">
-								<a href="#" class="btn btn-dark btn-lg">Get In Touch</a>
+				<div class="container">
+					<div class="row align-items-center min-vh-100">
+						<div class="col-lg-6 hero-text">
+							<h1>
+								Hi, I'm
+								<span>Ayomiposi Lowo</span>
+							</h1>
+
+							<p>Web Developer • Creative Thinker • Future Software Engineer</p>
+
+							<div class="hero-buttons">
+								<a href="#contact" class="btn-main">Contact Me</a>
+
+								<a href="#about" class="btn-outline-custom"> Learn More </a>
 							</div>
 						</div>
-						<div class="col-lg-6">
-							<img src="./code-img.jpg" class="img-fluid rounded" />
+
+						<div class="col-lg-6 text-center">
+							<img src="./code-img.jpg" alt="coding" class="hero-image img-fluid" />
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- about section -->
-			<section id="about" class="container">
-				<h2 class="section-head">About Me</h2>
-				<div class="about-content">
-					<div class="about-image"><img src="./ME.jpg" alt="ME.jpg" /></div>
-					<div class="about-text">
-						<p>
-							I’m a coding master in training, always excited to learn new skills and build creative
-							projects on my computer. Technology feels like a playground to me, and every day I discover
-							something new that makes me want to keep improving.
-						</p>
 
-						<p>
-							When I’m not coding, you’ll probably find me playing video games or imagining epic adventures
-							with my action figures. I’m eleven years old, proud to have all A’s in school, and my favorite
-							subject right now is reading because it lets me explore new worlds and ideas.
-						</p>
+			<!-- About -->
+			<section id="about" class="section-padding">
+				<div class="container">
+					<h2 class="section-title">About Me</h2>
+
+					<div class="row align-items-center g-5">
+						<div class="col-lg-5 text-center">
+							<div class="about-image-wrapper">
+								<img src="./ME.jpg" alt="Me" class="about-image" />
+							</div>
+						</div>
+
+						<div class="col-lg-7">
+							<div class="about-card">
+								<p>
+									I’m a coding master in training who loves building creative websites and
+									learning new technology skills every day.
+								</p>
+
+								<p>
+									Technology feels like a giant playground where I can create, experiment, and
+									improve with every project I make.
+								</p>
+
+								<p>
+									When I’m not coding, I enjoy video games, reading, and imagining epic
+									adventures with my action figures.
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
-			<!-- My Skills -->
-			<section id="skill" class="container">
-				<h2 class="section-head">My Skills</h2>
-				<div class="skill-container">
-					<div class="skill-card">
-						<h3>Frontend Development</h3>
-						<p>HTML5, CSS3, JavaScript</p>
-					</div>
-					<div class="skill-card">
-						<h3>Responsive Design</h3>
-						<p>Mobile-first design, CSS Grid, Flexbox</p>
-					</div>
-					<div class="skill-card">
-						<h3>Git - Version Control</h3>
-						<p>Git, GitHub, Collaborative Development</p>
+
+			<!-- Skills -->
+			<section id="skill" class="section-padding dark-section">
+				<div class="container">
+					<h2 class="section-title">My Skills</h2>
+
+					<div class="row g-4">
+						<div class="col-md-4">
+							<div class="skill-card">
+								<i class="fas fa-laptop-code"></i>
+								<h3>Frontend Development</h3>
+								<p>HTML5, CSS3, JavaScript</p>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="skill-card">
+								<i class="fas fa-mobile-screen"></i>
+								<h3>Responsive Design</h3>
+								<p>Flexbox, Grid, Mobile First Design</p>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="skill-card">
+								<i class="fab fa-github"></i>
+								<h3>Git & GitHub</h3>
+								<p>Version Control & Collaboration</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
 			<!-- Projects -->
-			<section id="project" class="container">
-				<h2 class="section-head">My Projects</h2>
-				<div class="projects-container">
-					<div class="project-card">
-						<img src="./dog-website.jpeg" width="200" alt="Project 1 Screenshot" class="project-img" />
-						<h3>Dog adoption website</h3>
-						<p>
-							This is a sleek and modern weather forecast site that is reliable and you'll know what to
-							dress like for any day. Never get suprised by the weather ever again with this website
-						</p>
-						<div class="project-links">
-							<a
-								href="https://ayomiposi-dev.github.io/dog-adoption/"
-								target="_blank"
-								class="btn btn-primary"
-								>Live Demo</a
-							>
-							<a
-								href="https://github.com/Ayomiposi-DEV/dog-adoption"
-								target="_blank"
-								class="btn btn-secondary"
-								>GitHub</a
-							>
+			<section id="project" class="section-padding">
+				<div class="container">
+					<h2 class="section-title">My Projects</h2>
+
+					<div class="row g-4">
+						<!-- Project 1 -->
+						<div class="col-lg-6">
+							<div class="project-card">
+								<img src="./dog-website.jpeg" alt="Dog Adoption Website" class="project-img" />
+
+								<div class="project-content">
+									<h3>Dog Adoption Website</h3>
+
+									<p>
+										A clean and modern dog adoption website designed to help rescue dogs
+										find loving homes quickly and easily.
+									</p>
+
+									<div class="project-links">
+										<a
+											href="https://ayomiposi-dev.github.io/dog-adoption/"
+											target="_blank"
+											class="btn-main">
+											Live Demo
+										</a>
+
+										<a
+											href="https://github.com/Ayomiposi-DEV/dog-adoption"
+											target="_blank"
+											class="btn-outline-custom">
+											GitHub
+										</a>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="project-card">
-						<img src="./wheather-app.png" width="200" alt="Project 1 Screenshot" class="project-img" />
-						<h3>Weather app</h3>
-						<p>
-							We are a non-profit organization dedicated to rescuing, rehabilitating, and rehoming dogs in
-							need. Every dog deserves a loving home and a second chance at happiness.
-						</p>
-						<div class="project-links">
-							<a
-								href=" https://ayomiposi-dev.github.io/weather-website/"
-								target="_blank"
-								class="btn btn-primary"
-								>Live Demo</a
-							>
-							<a
-								href="https://github.com/Ayomiposi-DEV/weather-website"
-								target="_blank"
-								class="btn btn-secondary"
-								>GitHub</a
-							>
+
+						<!-- Project 2 -->
+						<div class="col-lg-6">
+							<div class="project-card">
+								<img src="./wheather-app.png" alt="Weather App" class="project-img" />
+
+								<div class="project-content">
+									<h3>Weather App</h3>
+
+									<p>
+										A responsive weather forecast app that helps users stay prepared with
+										accurate weather information and modern UI design.
+									</p>
+
+									<div class="project-links">
+										<a
+											href="https://ayomiposi-dev.github.io/weather-website/"
+											target="_blank"
+											class="btn-main">
+											Live Demo
+										</a>
+
+										<a
+											href="https://github.com/Ayomiposi-DEV/weather-website"
+											target="_blank"
+											class="btn-outline-custom">
+											GitHub
+										</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+
 			<!-- Contact -->
-			<section id="contact" class="container">
-				<form class="form-style">
-					<div class="form-style2">
-						<h2 class="section-head">Contact</h2>
-						<label for="name">Name:</label><br />
-						<input type="text" id="name" name="name" required /><br /><br />
+			<section id="contact" class="section-padding">
+				<div class="container">
+					<h2 class="section-title">Contact Me</h2>
 
-						<label for="email">Email:</label><br />
-						<input type="email" id="email" name="email" required /><br /><br />
+					<div class="contact-wrapper">
+						<form class="contact-form">
+							<input type="text" placeholder="Your Name" required />
 
-						<label for="message">Message:</label><br />
-						<textarea id="message" name="message" rows="5" required></textarea><br /><br />
+							<input type="email" placeholder="Your Email" required />
 
-						<button type="submit" class="btn-submit">Submit</button>
+							<textarea rows="6" placeholder="Your Message" required></textarea>
+
+							<button type="submit" class="btn-main w-100">Send Message</button>
+						</form>
 					</div>
-				</form>
+				</div>
 			</section>
 		</main>
+
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>
-
-<!-- 
-How to  add changes to your code
-
-STEP 1:  
-checkout to another branch  =>   git checkout -b  name-update
-
-STEP 2: write your new code
-
-STEP 3: commit and push new code to new branch
-
-step 4: Go to github and  create a pull request into main
-
-step 5: merge into main
-
-To continu on your local branch -  do git pull
-
--->
